@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class OrderTest {
@@ -12,7 +13,7 @@ public class OrderTest {
 
     @Before
     public void setup() {
-        webDriver = new FirefoxDriver();
+        webDriver = new ChromeDriver();
         webDriver.get("https://qa-scooter.praktikum-services.ru/");
     }
 

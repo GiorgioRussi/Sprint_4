@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import static org.junit.Assert.assertTrue;
@@ -35,7 +36,7 @@ public class FAQTest {
 
     @Before
     public void setup() {
-        webDriver = new FirefoxDriver();
+        webDriver = new ChromeDriver();
         webDriver.get("https://qa-scooter.praktikum-services.ru/");
     }
 
